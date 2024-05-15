@@ -70,24 +70,40 @@ const Index = () => {
                 {providers.includes("openai") && (
                   <Box>
                     <Text>OpenAI Models</Text>
-                    <Radio value="gpt-4o">GPT 4o</Radio>
-                    <Radio value="gpt-4-turbo">GPT 4 Turbo</Radio>
-                    <Radio value="gpt-3.5-turbo-0125">GPT 3.5 Turbo Flagship</Radio>
+                    <Radio value="gpt-4o" isDisabled={false}>
+                      GPT 4o
+                    </Radio>
+                    <Radio value="gpt-4-turbo" isDisabled={false}>
+                      GPT 4 Turbo
+                    </Radio>
+                    <Radio value="gpt-3.5-turbo-0125" isDisabled={false}>
+                      GPT 3.5 Turbo Flagship
+                    </Radio>
                   </Box>
                 )}
                 {providers.includes("anthropic") && (
                   <Box>
                     <Text>Anthropic Models</Text>
-                    <Radio value="claude-3-opus-20240229">Claude 3 Opus</Radio>
-                    <Radio value="claude-3-sonnet-20240229">Claude 3 Sonnet</Radio>
-                    <Radio value="claude-3-haiku-20240307">Claude 3 Haiku</Radio>
+                    <Radio value="claude-3-opus-20240229" isDisabled={false}>
+                      Claude 3 Opus
+                    </Radio>
+                    <Radio value="claude-3-sonnet-20240229" isDisabled={false}>
+                      Claude 3 Sonnet
+                    </Radio>
+                    <Radio value="claude-3-haiku-20240307" isDisabled={false}>
+                      Claude 3 Haiku
+                    </Radio>
                   </Box>
                 )}
                 {providers.includes("google") && (
                   <Box>
                     <Text>Google Models</Text>
-                    <Radio value="gemini-1.5-pro-latest">Gemini 1.5 Pro</Radio>
-                    <Radio value="gemini-pro">Gemini 1 Pro</Radio>
+                    <Radio value="gemini-1.5-pro-latest" isDisabled={false}>
+                      Gemini 1.5 Pro
+                    </Radio>
+                    <Radio value="gemini-pro" isDisabled={false}>
+                      Gemini 1 Pro
+                    </Radio>
                   </Box>
                 )}
               </Stack>
