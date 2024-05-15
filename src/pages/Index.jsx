@@ -11,6 +11,7 @@ const Index = () => {
 
   const handleProviderChange = (values) => {
     setProviders(values);
+    setModel("");
   };
 
   const handleModelChange = (e) => {
