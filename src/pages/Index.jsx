@@ -14,8 +14,8 @@ const Index = () => {
     setModel("");
   };
 
-  const handleModelChange = (e) => {
-    setModel(e.target.value);
+  const handleModelChange = (value) => {
+    setModel(value);
   };
 
   const handleContentChange = (e) => {
@@ -65,7 +65,7 @@ const Index = () => {
         {providers.length > 0 && (
           <FormControl as="fieldset">
             <FormLabel as="legend">Select Model:</FormLabel>
-            <RadioGroup onChange={handleModelChange} value={model}>
+            <RadioGroup onChange={(value) => handleModelChange(value)} value={model}>
               <Stack spacing={2}>
                 {providers.includes("openai") && (
                   <Box>
